@@ -1,0 +1,188 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% \input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Aldo R. Hernández Ávila} \\ \vspace{1pt}
+    \small +502 3137 0599 $|$ \href{mailto:aldo.hernandez3012@gmail.com}{\underline{aldo.hernandez3012@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/aldo-hernandez-285590170}{\underline{linkedin.com/in/aldo-hernandez}} $|$
+    \href{https://github.com/tato30}{\underline{github.com/tato30}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {EUDE Business School}{Madrid, Spain}
+      {MBA in Business Intelligence and Big Data}{January 2026 -- February 2027 (Expected)}
+    \resumeSubheading
+      {Universidad de San Carlos de Guatemala}{Guatemala City, Guatemala}
+      {Bachelor of Computer Science and Software Systems}{February 2018 -- July 2024}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Datalogic System, S.A.}{Guatemala City, Guatemala}
+      {Software Engineer}{September 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Migrated a legacy medical system from .NET Framework WinForms to a web application with .NET Core, Angular, and OracleDB, preserving 100\% of existing features and modernizing the user experience.}
+        \resumeItem{Implemented unit tests with NUnit in a hospital system, achieving full coverage of critical features.}
+        \resumeItem{Designed and developed an appointment-scheduling solution with .NET, Angular, and OracleDB, integrating the Hospital Information System (HIS) with Radiology and Laboratory Information Systems (RIS), reducing patient wait times.}
+        \resumeItem{Analyzed analog workflows across 4 government entities and produced digital maturity assessments, obsolescence reports, and migration roadmaps.}
+        \resumeItem{Implemented a regulatory reporting pipeline for a bank on Databricks with Medallion architecture, automating the generation and periodic delivery of reports.}
+        \resumeItem{Developed a real estate aggregator using web scraping techniques across multiple sources, integrating interactive maps via Google Maps API and OpenStreetMap to visualize properties and nearby services.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Sitecpro, S.A.}{Guatemala City, Guatemala}
+      {Development Lead}{August 2023 -- September 2024}
+      \resumeItemListStart
+        \resumeItem{Led a team of five developers using Scrum methodology to maintain and evolve software systems for fintech and retail clients.}
+        \resumeItem{Led the migration of corporate code repositories from SVN to Git, successfully migrating 64\% of the company's total repositories.}
+        \resumeItem{Standardized version control practices with Gitflow and CI/CD pipelines via GitHub Actions, reducing deployment and testing time by 13\%. Consolidated repositories using monorepos and Git submodules, reducing their count by one-third.}
+        \resumeItem{Designed and developed a cross-platform mobile app (Android/iOS) for bank check scanning and collection for community financial institutions in Guatemala, built with .NET, Vue, and Capacitor, processing over 1,200 checks per hour and supporting over 100 concurrent users.}
+      \resumeItemListEnd
+    \resumeSubSubheading
+      {Software Developer}{March 2021 -- August 2023}
+      \resumeItemListStart
+        \resumeItem{Designed and developed a payroll management system including vacation assignment, absence management, monthly/bi-weekly payroll calculations, contract generation, work hour tracking, employee records, and legal reporting using Odoo and Python, deployed at a university and multiple small businesses.}
+        \resumeItem{Designed and developed a digital signature platform with digital certificates, one-time certificates, and digital stamps, integrating multiple identity providers via REST APIs; built with Python, Odoo, and PostgreSQL, containerized with Docker, and deployed on Kubernetes on AWS and later Oracle Cloud, for over 12 financial and government entities across Central America.}
+        \resumeItem{Developed modern and responsive front-end interfaces using Vue.js and Nuxt for multiple fintech and small business clients.}
+        \resumeItem{Developed a banking document processing, centralization, and search system using .NET, Vue.js, and Elasticsearch, indexing 72\% of the document repository and reducing staff search time by 99\%.}
+        \resumeItem{Developed a communication interface between Wi-Fi receipt printers and a cloud POS system using Python, SignalR, and Blazor (.NET), deployed in over 10 restaurants and cafés, eliminating the need for local servers and on-premises cabling.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{vue-pdf} $|$ \emph{Vue, TypeScript, NPM, Vitest, GitHub}}{2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{Developed an open-source PDF viewer component for Vue.js on top of pdf.js. Published to NPM with 20K+ weekly downloads.}
+        \resumeItem{Implemented unit tests with Vitest to ensure code quality and reliability.}
+        \resumeItem{Used GitHub Actions to automate testing and deployment on each new release, documented using VitePress and deployed on GitHub Pages.}
+        \resumeItem{Available at \href{https://github.com/TaTo30/vue-pdf}{https://github.com/TaTo30/vue-pdf}.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C\#, SQL (PostgreSQL, SQL Server, Oracle), JavaScript/TypeScript, HTML/CSS} \\
+     \textbf{Frameworks}{: Vue, Angular, Node.js, .NET, Blazor, Odoo, Vitest, NUnit, Nuxt, TailwindCSS, Capacitor, SignalR} \\
+     \textbf{Developer Tools}{: Git, Docker, Kubernetes, GitHub Actions, Azure DevOps, Databricks, Elasticsearch, Google Cloud Platform, Oracle Cloud, Amazon Web Services} \\
+     \textbf{Libraries}{: PyTorch, Firebase, Supabase} \\
+     \textbf{AI Tools}{: GitHub Copilot, Claude Code} \\
+     \textbf{Methodologies}{: Agile, Scrum}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}

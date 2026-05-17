@@ -1,0 +1,18 @@
+---
+layout: archive
+permalink: /blog/
+title: "Blog Posts"
+author_profile: true
+---
+
+{% include base_path %}
+
+<h2>All Posts</h2>
+
+{% if site.posts.size > 0 %}
+  {% for post in site.posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% else %}
+  <p>No posts found.</p>
+{% endif %}
